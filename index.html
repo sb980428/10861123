@@ -4,78 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
+    <title>eZTravel APP</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+        
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: black;
+            text-decoration: none;
+        }
+        
+        a:active {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <!-- Start of first page -->
-<div data-role="page" id="foo">
-
-	<div data-role="header">
-		<h1>Foo</h1>
-	</div><!-- /header -->
-
-	<div role="main" class="ui-content">
-		<ul data-role="listview" data-inset="true">
-                <li><a href="#">
-                    <img src="img/p1.jpg">
-                <h2>Broken Bells</h2>
-                <p>Broken Bells</p></a>
-                </li>
-                <li><a href="#">
-                    <img src="img/p2.jpg">
-                <h2>Warning</h2>
-                <p>Hot Chip</p></a>
-                </li>
-                <li><a href="#">
-                    <img src="img/p3.jpg">
-                <h2>Wolfgang Amadeus Phoenix</h2>
-                <p>Phoenix</p></a>
-                </li>
-            </ul>
-	</div><!-- /content -->
-
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
-</div><!-- /page -->
-
-<!-- Start of second page -->
-<div data-role="page" id="bar">
-
-	<div data-role="header">
-		<h1>Bar</h1>
-	</div><!-- /header -->
-
-	<div role="main" class="ui-content">
-		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
-        <p><a href="#foo">Back to foo</a></p>
-        <p><a href="#bar2"class="ui-btn ui-btn-b">Bar2</a></p>
-	</div><!-- /content -->
-
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
-</div><!-- /page -->
-
-<!-- Start of second page -->
-<div data-role="page" id="bar2">
-
-	<div data-role="header">
-		<h1>Bar2</h1>
-	</div><!-- /header -->
-
-	<div role="main" class="ui-content">
-		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
-		<p><a href="#foo">Back to foo</a></p>
-	</div><!-- /content -->
-
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
-</div><!-- /page -->
+    
+    <div is="page" id="home" data-role="page">
+        <div data-role="header" data-position="fixed" style="background:-webkit-linear-gradient(rgb(143, 207, 175),rgb(24, 44, 41));">
+            <h1 style="color:white;text-align:center;font-size:24px;">09mark</h1>
+            <a class="ui-btn ui-btn-right ui-btn-icon-left ui-icon-info ui-btn-icon-notext ui-corner-all" style="margin:12px;"></a>
+        </div>
+        <div style="margin-top: 30px;" role="main" class="ui-content">
+            <div is="grid" class="ui-grid-b" style="height:130px">
+                <div class="ui-block-a" style="height:100%;text-align:center">
+                        <a href="b.html" rel="external">
+                    <img src="images/bath.png" style="width:60px; margin:5px 15px 5px 18px">
+                    <h5  style="text-align:center; margin-top:-5px;">衛浴用品</h5>
+                </div>
+                <div class="ui-block-b" style="height:100%;text-align:center">
+                        <a href="c.html" rel="external">
+                    <img  src="images/bread.png" style="width:70px; margin-left:10px;">
+                    <h5  style="text-align:center; margin-top:-5px;margin-left:20px;">麵包</h5>
+                </div>
+                <div class="ui-block-c" style="height:100%;text-align:center">
+                        <a href="d.html" rel="external">
+                    <img  src="images/clean.png" style="width:60px; margin:5px 15px 5px 18px">
+                    <h5  style="text-align:center; margin-top:-5px;">清潔用品</h5>
+                </div>
+            </div>
+            <div is="grid" class="ui-grid-b" style="height:130px">
+                <div class="ui-block-a" style="height:100%;text-align:center">
+                        <a href="e.html" rel="external">
+                    <img  src="images/clothe.png" style="width:70px; margin:0px 10px 0px 12px">
+                    <h5  style="text-align:center; margin-top:-5px;">衣服</h5>
+                </div>
+                <div class="ui-block-b" style="height:100%;text-align:center">
+                        <a href="f.html" rel="external">
+                    <img  src="images/cookies.png" style="width:60px; margin:5px 15px 5px 25px">
+                    <h5  style="text-align:center; margin-top:-5px;">餅乾零食</h5>
+                </div>
+                <div class="ui-block-c" style="height:100%;text-align:center">
+                        <a href="g.html" rel="external">
+                    <img  src="images/drink.png" style="width:70px; margin-left:6px;">
+                    <h5  style="text-align:center; margin-top:-5px;margin-left:20px;">飲料</h5>
+                </div>
+            </div>
+         
+            </div>
+        </div>
+        <div is="footer" data-role="footer" data-position="fixed" data-theme="b">
+            <h3>@409mark Company</h3>            
+        </div>
+    </div>
+    
 </body>
 </html>
